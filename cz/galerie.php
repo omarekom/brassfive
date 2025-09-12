@@ -1,0 +1,1 @@
+<?php header("Location: ../galerie.html", true, 301); ?>

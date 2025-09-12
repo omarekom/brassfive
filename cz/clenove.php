@@ -1,0 +1,1 @@
+<?php header("Location: ../clenove.html", true, 301); ?>

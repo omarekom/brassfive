@@ -1,0 +1,1 @@
+<?php header("Location: ../nahravky.html", true, 301); ?>

@@ -1,0 +1,1 @@
+<?php header("Location: ../kontakt.html", true, 301); ?>

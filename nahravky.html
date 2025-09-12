@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="koncert, vzdělání, výchova, hudba, poznání">
+  <meta name="author" content="Ondřej Marek, www.omarek.cz">
+  <meta name="description" content="Výběr z nahrávek žesťového kvinteta Brass five.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrassFive – Nahrávky</title>
+  <meta property="og:title" content="BrassFive – Nahrávky">
+  <!-- <meta property="og:image" content=""> -->
+  <meta property="og:description" content="Výběr z nahrávek žesťového kvinteta Brass five.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="pictures/favicon144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="pictures/favicon114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="pictures/favicon72.png">
+  <link rel="apple-touch-icon-precomposed" href="pictures/favicon57.png">
+  <link rel="icon" href="pictures/favicon32.png" type="image/png" sizes="32x32">
+</head>
+
+<body>
+  <div id="top"></div>
+  <header>
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <h1><a href="index.html">BrassFive</a></h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="clenove.html">Členové</a></li>
+        <li><a href="vychovneKoncerty.html">Výchovné koncerty</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="nahravky.html" class="selectedInMenu">Nahrávky</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header>
+      <div class="darkness">
+        <h2>Nahrávky</h2>
+      </div>
+    </header>
+    <section class="padding-top-responsive">
+      <article class="record-card">
+        <h3>Byla cesta, byla ušlapaná</h3>
+        <p>Jan Bílek</p>
+        <audio controls src="records/bylaCestaBylaUslapana.mp3">Váš prohlížeč bohužel nepodporuje přehrávání audia.</audio>
+      </article>
+      <article class="record-card">
+        <h3>Svatí pochodují</h3>
+        <p>arr. Antonín Vaigl</p>
+        <audio controls src="records/svatiPochoduji.mp3">Váš prohlížeč bohužel nepodporuje přehrávání audia.</audio>
+      </article>
+      <article class="record-card">
+        <h3>Byl to krásný zlatý sen</h3>
+        <p>A. Dvořák, soprán Štěpánka Heřmánková, arr. A. Vaigl</p>
+        <audio controls src="records/bylToKrasnyZlatySen.mp3">Váš prohlížeč bohužel nepodporuje přehrávání audia.</audio>
+      </article>
+      <article class="record-card">
+        <h3>Na horách ticho</h3>
+        <p>A. Dvořák soprán Štěpánka Heřmánková arr. A. Vaigl</p>
+        <audio controls src="records/naHorachTicho.mp3">Váš prohlížeč bohužel nepodporuje přehrávání audia.</audio>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="to-the-top"><a href="#top">Nahoru</a></div>
+    <div class="footer-info">Webové stránky vytvořil <a href="http://www.omarek.cz" target="_blank">Ondřej Marek</a> v roce 2021.</div>
+  </footer>
+
+  <script>
+    // only one audio playing
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.addEventListener('play', (e) => {
+        const audioElements = document.querySelectorAll('audio');
+        for(let i = 0; i < audioElements.length; i++) {
+          const audioElement = audioElements[i];
+          if(audioElement !== e.target)
+            audioElement.pause();
+        }
+      }, true);
+    });
+  </script>
+</body>
+
+</html>
