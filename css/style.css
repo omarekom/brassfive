@@ -375,6 +375,10 @@ figcaption {
   color: var(--gray-darker);
 }
 
+.member-desc p + p {
+  margin-top: 0;
+}
+
 .member-desc em::after {
   content: '';
   display: block;
@@ -458,6 +462,13 @@ figcaption {
 }
 
 /* Gallery */
+
+.propagation-link {
+  display: none;  /* default for mobile */
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: right;
+}
 
 .gallery-section {
   padding: 1rem;
@@ -769,8 +780,13 @@ footer {
 }
 
 /* hide call button for desktop and tablets */
+/* and show propagation link download */
 
 @media screen and (min-device-width: 27em) {
+  .propagation-link {
+    display: block;
+  }
+
   .call-button {
     display: none;
   }

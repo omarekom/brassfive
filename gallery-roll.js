@@ -1,7 +1,7 @@
-// max-height is set for each .photos-grid
+// max-height is set for each [data-photos-grid]
 // grid is closed when .photos-grid--closed is applied
 
-const grids = [...document.querySelectorAll('.photos-grid')];
+const grids = [...document.querySelectorAll('[data-photos-grid]')];
 
 const closeAllGrids = () => {
 	for (const grid of grids) {
