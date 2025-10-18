@@ -1,1 +1,0 @@
-<?php header("Location: ../vychovneKoncerty.html", true, 301); ?>

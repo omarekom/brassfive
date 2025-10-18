@@ -1,1 +1,0 @@
-<?php header("Location: ../en-index.html", true, 301); ?>
