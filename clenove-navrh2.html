@@ -39,9 +39,15 @@
       color: white;
       font-size: 2rem;
       pointer-events: none;
-      animation: click-icon-blink 2s;
-      animation-iteration-count: 5;
+      animation: click-icon-blink 2.6s;
+      animation-iteration-count: infinite;
+      transition: all 1s ease-out;
       opacity: 0;
+    }
+
+    .click-icon--hidden {
+      opacity: 0;
+      animation-iteration-count: 1;
     }
 
     @keyframes click-icon-blink {
@@ -54,10 +60,15 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      width: 10rem;
       overflow: hidden;
       padding: .5rem .5rem 0 .5rem;
       cursor: pointer;
+    }
+
+    @media (pointer:coarse) {
+        .member {
+          min-width: 10rem;
+        }
     }
 
     .member--selected {
@@ -218,8 +229,10 @@
   <script>
     const members = [...document.querySelectorAll('.member')];
     const memdesc = document.querySelector('.member-desc');
+    const clickAnim = document.querySelector('.click-icon');
     members.forEach(mem => {
       mem.addEventListener('click', () => {
+        clickAnim.classList.add('click-icon--hidden');
         if (memdesc.classList.contains('member-desc--hidden')) {
           // desc closed, show it
           memdesc.classList.remove('member-desc--hidden');
