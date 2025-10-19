@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="koncert, vzdělání, výchova, hudba, poznání">
+  <meta name="author" content="Ondřej Marek, www.omarek.cz">
+  <meta name="description" content="Na této stránce najdete členy žesťového kvinteta BrassFive.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrassFive – Členové</title>
+  <meta property="og:title" content="BrassFive – Členové">
+  <!-- <meta property="og:image" content=""> -->
+  <meta property="og:description" content="Na této stránce najdete členy žesťového kvinteta BrassFive.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="pictures/favicon144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="pictures/favicon114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="pictures/favicon72.png">
+  <link rel="apple-touch-icon-precomposed" href="pictures/favicon57.png">
+  <link rel="icon" href="pictures/favicon32.png" type="image/png" sizes="32x32">
+  <style>
+    .band {
+      width: 100%;
+    }
+
+    .member-menu {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      overflow-x: scroll;
+    }
+
+    .click-icon {
+      z-index: 1;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      color: white;
+      font-size: 2rem;
+      pointer-events: none;
+      animation: click-icon-blink 2s;
+      animation-iteration-count: 5;
+      opacity: 0;
+    }
+
+    @keyframes click-icon-blink {
+      0% {opacity: 0;}
+      50% {opacity: 1;}
+      100% {opacity: 0;}
+    }
+
+    .member {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      width: 10rem;
+      overflow: hidden;
+      padding: .5rem .5rem 0 .5rem;
+      cursor: pointer;
+    }
+
+    .member--selected {
+      background-color: var(--gray);
+    }
+
+    .member img {
+      transition: all .4s ease-out;
+    }
+
+    .member:hover img {
+      filter: brightness(.8);
+    }
+
+    .member-name {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .member-desc {
+      margin: 0;
+      padding: 1rem;
+      background-color: var(--gray);
+    }
+
+    .member-desc--hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="top"></div>
+  <header>
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <h1><a href="index.html">BrassFive</a><img class="cz-logo" src="pictures/CZ_logo.png" draggable="false"></h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="clenove.html" class="selectedInMenu">Členové</a></li>
+        <li><a href="vychovneKoncerty.html">Výchovné koncerty</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="nahravky.html">Nahrávky</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header>
+      <div class="darkness">
+        <h2>Členové</h2>
+      </div>
+    </header>
+    <section class="padding-top-responsive">
+      <article class="band">
+        <div class="member-menu">
+          <svg class="click-icon" style="width: 1em; height: 1em;" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"></path>
+          </svg>
+          <div class="member">
+            <img draggable="false" src="pictures/Jan-Pohoraly.jpg" alt="">
+            <div class="member-name">Jan Pohořalý</div>
+          </div>
+          <div class="member">
+            <img draggable="false" src="pictures/Tomas-Dabrowski.jpg" alt="">
+            <div class="member-name">Tomáš Dabrowski</div>
+          </div>
+          <div class="member">
+            <img draggable="false" src="pictures/Tomas-Burger.jpg" alt="">
+            <div class="member-name">Tomáš Bürger</div>
+          </div>
+          <div class="member">
+            <img draggable="false" src="pictures/Vaclav-Bizek.jpg" alt="">
+            <div class="member-name">Václav Bízek</div>
+          </div>
+          <div class="member">
+            <img draggable="false" src="pictures/Martin-Poncik.jpg" alt="">
+            <div class="member-name">Martin Pončík</div>
+          </div>
+        </div>
+        <div class="member-desc member-desc--hidden">
+          <div id="pohoraly">
+            <em>trubka, křídlovka</em>
+            <p>Pochází ze Středočeského kraje a prvního hudebního vzdělání se mu dostalo od dědečka, po kterém zdědil lásku k hudbě a trubce. Od roku 1990 studoval na Vojenské konzervatoři v Roudnici nad Labem. Po maturitě v roce 1994 začal hrát v Posádkové hudbě Praha a v současnosti je sólistou Ústřední hudby AČR. Od roku 1995 navštěvoval Pražskou konzervatoř, kde byl ve třídě prof. Antonína Vaigla. Při hodinách komorní hry, které profesor Vaigl vedl, vzniknul v roce 1996 náš soubor: žesťové kvinteto Brass Five. Na Hudební akademii v Praze absolvoval u prof. Václava Junka. Zúčastnil se několika soutěží konzervatoří, Pražského jara a soutěže žesťových nástrojů v Brně. Mimo své stálé angažmá vystupuje s různými symfonickými a komorními orchestry (Berg, Č.N.S.O, ČF, FOK, SOČR, KSO). S orchestrem Berg provedl českou premiéru skladby „Gregoriánské variace“ Henri Tomasiho a v roce 2007 se stejným tělesem natočil pro Českou televizi skladbu Slavomíra Hořínky „Širej ahava“.</p>
+            <div class="special">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-music"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+              <p>Honza je komunikativní, společenský a organizačně zdatný, prostě vedoucí :-)</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="coworkers">
+        <h3>Naši hosté</h3>
+        <div class="columns">
+          <div class="col-left">
+            <ul>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/David_Pracha%C5%99">David Prachař</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Roman_Zach">Roman Zach</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Michal_Dlouh%C3%BD_(herec)">Michal Dlouhý</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Michal_Novotn%C3%BD_(herec)">Michal Novotný</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Jan_%C4%8Censk%C3%BD">Jan Čenský</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Jan_%C5%A0%C5%A5astn%C3%BD">Jan Šťastný</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Ji%C5%99%C3%AD_Dvo%C5%99%C3%A1k_(herec)">Jiří Dvořák</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Ji%C5%99%C3%AD_Langmajer">Jiří Langmajer</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Vladim%C3%ADr_Javorsk%C3%BD">Vladimír Javorský</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Sa%C5%A1a_Ra%C5%A1ilov_mlad%C5%A1%C3%AD">Saša Rašilov</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Martin_Pechl%C3%A1t">Martin Pechlát</a></li>
+              <li><a target="_blank" href="https://www.divadlonavinohradech.com/soubor/Daniel_Bambas">Daniel Bambas</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Viktor_Preiss">Viktor Preiss</a></li>
+              <li><a target="_blank" href="https://www.divadlovceletne.cz/herec/petr-lnenicka/">Petr Lněnička</a></li>
+              <li><a target="_blank" href="http://www.kareldobry.cz/">Karel Dobrý</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/V%C3%A1clav_%C5%BDmol%C3%ADk">Václav Žmolík</a></li>
+            </ul>
+            <ul>
+              <li><a target="_blank" href="https://www.divadlopalace.cz/cz/adela-gondikova/56/">Adéla Gondíková</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Kl%C3%A1ra_Issov%C3%A1">Klára Issová</a></li>
+              <li><a target="_blank" href="https://www.narodni-divadlo.cz/cs/profil/tatjana-medvecka-1594262">Taťjana Medvecká</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Lenka_Krobotov%C3%A1">Lenka Krobotová</a></li>
+              <li><a target="_blank" href="https://cs.wikipedia.org/wiki/Andrea_%C4%8Cern%C3%A1">Andrea Černá</a></li>
+              <li><a target="_blank" href="https://cenythalie.cz/profil-umelce/lucie-trmikova-2/">Lucie Trmíková</a></li>
+            </ul>
+          </div>
+          <div class="col-right">
+            <h4>Zpěvačky</h4>
+            <ul>
+              <li><a target="_blank" href="http://www.obella.net/">Olga Vít Krumpholzová</a></li>
+              <li><a target="_blank" href="https://www.narodni-divadlo.cz/cs/profil/tereza-ruzickova-1610271">Tereza Růžičková</a></li>
+              <li><span>Karolína Žmolíková</span></li>
+              <li><a target="_blank" href="http://www.luciesilkenova.cz/">Lucie Silkenová</a></li>
+              <li><a target="_blank" href="http://www.horusap.com/nabizime/hudebni-produkce/klasika/stepanka-hermankova/">Štěpánka Heřmánková</a></li>
+              <li><a target="_blank" href="http://totalvokal.cz/">Totál Vokál</a></li>
+            </ul>
+            <h4>Zpěváci</h4>
+            <ul>
+              <li><a target="_blank" href="https://www.narodni-divadlo.cz/cs/profil/ales-briscein-1594116">Aleš Briscein</a></li>
+              <li><a target="_blank" href="https://bohemiavoice.com/bronislav-palowski/">Bronislav Palowski</a></li>
+              <li><a target="_blank" href="https://www.narodni-divadlo.cz/cs/profil/jurij-kruglov-1602454">Jurij Kruglov</a></li>
+            </ul>
+            <h4>Instrumentalisté</h4>
+            <ul>
+              <li><a target="_blank" href="https://benesovsky.denik.cz/galerie/varhanni-koncert-ve-vysokem-ujezdu.html?photo=4">Jakub Janšta</a></li>
+              <li><a target="_blank" href="https://www.dolniberkovice.cz/aktuality/adventni-koncert">Petra Kunfrontová</a></li>
+              <li><a target="_blank" href="http://www.gadrew-way.cz/to-jsme-my/ludmila-budinska/">Ludmila Budínská</a></li>
+              <li><a target="_blank" href="https://www.osobnosti.cz/vaclav-rout.php">Václav Rout</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="to-the-top"><a href="#top">Nahoru</a></div>
+    <div class="footer-info">Webové stránky vytvořil <a href="http://www.omarek.cz" target="_blank">Ondřej Marek</a> v roce 2021.</div>
+  </footer>
+
+  <script>
+    const members = [...document.querySelectorAll('.member')];
+    const memdesc = document.querySelector('.member-desc');
+    members.forEach(mem => {
+      mem.addEventListener('click', () => {
+        if (memdesc.classList.contains('member-desc--hidden')) {
+          // desc closed, show it
+          memdesc.classList.remove('member-desc--hidden');
+          mem.classList.add('member--selected');
+        } else {
+          // desc open
+          if (mem.classList.contains('member--selected')) {
+            // second click, close
+            memdesc.classList.add('member-desc--hidden');
+            mem.classList.remove('member--selected');
+          } else {
+            // switch member
+            members.forEach(mem => mem.classList.remove('member--selected'));
+            mem.classList.add('member--selected');
+          }
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>
