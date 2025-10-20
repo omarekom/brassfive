@@ -347,23 +347,97 @@ figcaption {
 
 /* Members */
 
-.member-card {
-  display: flex;
-  flex-direction: column;
+.band {
   width: 100%;
-  padding: 0.4rem;
+}
+
+.member-menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.click-indicator {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  left: 1rem;
+  color: var(--white);
+  font-size: 2rem;
+  animation: click-indicator-blink 2.6s infinite;
+  transition: all 1s ease-out; /* fix this -- disapearing wo transition */
+  opacity: 0;
+  pointer-events: none;
+}
+
+.click-indicator--hidden {
+  opacity: 0;
+  animation: none;
+}
+
+@keyframes click-indicator-blink {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.member {
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all .3s ease-out;
+  overflow: hidden;
+}
+
+/* do not get incredibely small on mobile */
+@media (pointer:coarse) {
+    .member {
+      min-width: 10rem;
+    }
+}
+
+.member:hover {
   background-color: var(--gray);
 }
 
-.member-card + .member-card {
-  margin-top: 2rem;
+.member--selected {
+  background-color: var(--gray);
+}
+
+.member img {
+  --corner-size: 2rem;
+  transition: all .2s ease-out;
+}
+
+.band--some-desc-opened .member img {
+  filter: brightness(60%);
+}
+
+.band--some-desc-opened .member--selected img {
+  filter: brightness(100%);
+}
+
+.member-name {
+  text-align: center;
+}
+
+.member--selected .member-name {
+  font-weight: bold;
 }
 
 .member-desc {
   display: flex;
   flex-direction: column;
-  margin-top: 0.8rem;
-  padding: 0 0.4rem;
+  padding: 1rem;
+  background-color: var(--gray);
+}
+
+.member-desc--hidden {
+  display: none;
 }
 
 .member-desc h3 {
@@ -373,6 +447,7 @@ figcaption {
 
 .member-desc em {
   color: var(--gray-darker);
+  text-align: center;
 }
 
 .member-desc p + p {
