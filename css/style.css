@@ -276,7 +276,7 @@ main > .header-band {
 }
 
 main > .header-concerts {
-  background-image: url("../pictures/terciary.jpg"), url("../pictures/terciaryGrayscale.jpg");
+  background-image: url("../pictures/vychovne-koncerty-bg.jpg"), url("../pictures/vychovne-koncerty-bgGrayscale.jpg");
 }
 
 main > .header-gallery {
@@ -541,6 +541,7 @@ figcaption {
 .ticket-card {
   padding: 1.2rem 1rem;
   background-color: var(--pink);
+  border-top: solid var(--red-dark) 3px;
 }
 
 .ticket-card + .ticket-card {
@@ -556,7 +557,6 @@ figcaption {
 /* Gallery */
 
 .propagation-link {
-  display: none;  /* default for mobile */
   margin-bottom: 1em;
   width: 100%;
   text-align: right;
@@ -765,6 +765,11 @@ footer {
 .footer-info a {
   color: inherit;
   text-decoration-color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
 }
 
 
@@ -894,10 +899,6 @@ footer {
 /* and show propagation link download */
 
 @media screen and (min-device-width: 27em) {
-  .propagation-link {
-    display: block;
-  }
-
   .call-button {
     display: none;
   }
