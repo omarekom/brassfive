@@ -198,7 +198,7 @@ h1 {
 }
 
 .cz-logo {
-  margin-left: .25em;
+  /* margin-left: .25em; */
   width: auto;
   height: 1em;
   user-select: none;
