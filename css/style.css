@@ -689,6 +689,10 @@ figcaption {
   margin-top: 0.68rem;
 }
 
+.record-card iframe {
+  margin-top: 0.68rem;
+}
+
 /* Contact */
 
 .contact-card {
