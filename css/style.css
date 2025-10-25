@@ -271,6 +271,22 @@ main > header {
   background-repeat: no-repeat, repeat;
 }
 
+main > .header-band {
+  background-image: url("../pictures/BrassFiveCZ_portrety_cb.jpg"), url("../pictures/BrassFiveCZ_portrety_cbGrayscale.jpg");
+}
+
+main > .header-concerts {
+  background-image: url("../pictures/terciary.jpg"), url("../pictures/terciaryGrayscale.jpg");
+}
+
+main > .header-gallery {
+  background-image: url("../pictures/BrassFiveCZ_narodniMuzeum.jpg"), url("../pictures/BrassFiveCZ_narodniMuzeumGrayscale.jpg");
+}
+
+main > .header-records {
+  background-image: url("../pictures/secondary.jpg"), url("../pictures/secondaryGrayscale.jpg");
+}
+
 .darkness {
   display: flex;
   align-items: flex-end;
@@ -369,7 +385,7 @@ figcaption {
   color: var(--white);
   font-size: 2rem;
   animation: click-indicator-blink 2.6s infinite;
-  transition: all 1s ease-out; /* fix this -- disapearing wo transition */
+  transition: all 1s ease-out;
   opacity: 0;
   pointer-events: none;
 }
