@@ -774,14 +774,6 @@ footer {
 
 
 
-/* hide CZ logo for small screens */
-
-@media screen and (max-width: 21em) {
-  .cz-logo {
-    display: none;
-  }
-}
-
 /* responsive menu */
 
 @media screen and (min-width: 84em) {
@@ -811,6 +803,18 @@ footer {
 }
 
 /* responsive font size */
+
+@media screen and (max-width: 18em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 21em) {
+  html {
+    font-size: 85%;
+  }
+}
 
 @media screen and (min-width: 26em) {
   html {
