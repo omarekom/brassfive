@@ -691,6 +691,7 @@ figcaption {
 
 .record-card iframe {
   margin-top: 0.68rem;
+  max-width: 100%;
 }
 
 /* Contact */
